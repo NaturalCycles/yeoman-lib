@@ -55,15 +55,6 @@ export class BaseGenerator extends Generator {
   }
 
   async _getBaseAnswers (): Promise<BaseAnswers> {
-    const { skipQuestions } = this.options as BaseOptions
-
-    if (skipQuestions) {
-      const { baseAnswers } = this.config.getAll()
-      if (baseAnswers) {
-        return baseAnswers
-      }
-    }
-
     const answers1 = await this.prompt<BaseAnswers1>([
       {
         name: 'npmName',
@@ -123,11 +114,7 @@ export class BaseGenerator extends Generator {
       npmNameWithoutScope,
       githubFullName,
     }
-
-    // this.config.setAll
-    // Object.entries(this.answers).forEach(([k, v]) => this.config.set(k, v))
-    this.config.set('baseAnswers', this.baseAnswers)
-
+    
     return this.baseAnswers
   }
 
