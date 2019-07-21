@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true
+  },
+  "exclude": ["**/__exclude", "**/@linked", "src/test", "src/**/*.test.*"]
+}
