@@ -35,7 +35,7 @@
   "engines": {
     "node": ">=10.13"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Common generator functions",
   "author": "Natural Cycles Team",
   "license": "MIT"
