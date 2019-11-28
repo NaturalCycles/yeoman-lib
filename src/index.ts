@@ -1,6 +1,13 @@
-import { BaseAnswers, BaseGenerator, inquirerValid, parseNpmName, githubOrgSchema, githubRepoSchema,
+import {
+  BaseAnswers,
+  BaseGenerator,
+  BaseOptions,
+  githubOrgSchema,
+  githubRepoSchema,
+  inquirerValid,
   notEmptyStringSchema,
-  BaseOptions} from './base.generator'
+  parseNpmName,
+} from './base.generator'
 
 export {
   BaseGenerator,

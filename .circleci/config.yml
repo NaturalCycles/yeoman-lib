@@ -21,8 +21,8 @@ workflows:
           filters:
             branches:
               only: master
-#      - tools/build-job
-#      - tools/test-job
+  #      - tools/build-job
+  #      - tools/test-job
 
   nightly-workflow:
     triggers:

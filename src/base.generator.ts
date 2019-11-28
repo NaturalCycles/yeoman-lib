@@ -1,7 +1,12 @@
-import { AnySchemaTyped, convert, getValidationResult, stringSchema } from '@naturalcycles/nodejs-lib'
-import * as Generator from 'yeoman-generator'
+import {
+  AnySchemaTyped,
+  convert,
+  getValidationResult,
+  stringSchema,
+} from '@naturalcycles/nodejs-lib'
 import _ = require('lodash')
 import * as checkNpmName from 'npm-name'
+import * as Generator from 'yeoman-generator'
 
 export interface BaseOptions {
   skipQuestions?: boolean
@@ -35,7 +40,7 @@ export const githubRepoSchema = stringSchema
 export const notEmptyStringSchema = stringSchema
 
 export class BaseGenerator extends Generator {
-  constructor (args: any, opts: any) {
+  constructor(args: any, opts: any) {
     super(args, opts)
 
     this.option('skipQuestions', {
@@ -49,12 +54,12 @@ export class BaseGenerator extends Generator {
 
   baseAnswers!: BaseAnswers
 
-  async _logVersion (projectDir: string): Promise<void> {
+  async _logVersion(projectDir: string): Promise<void> {
     const { version, name } = require(`${projectDir}/package.json`)
     this.log(`\n\n${name}@${version}\n\n`)
   }
 
-  async _getBaseAnswers (): Promise<BaseAnswers> {
+  async _getBaseAnswers(): Promise<BaseAnswers> {
     const answers1 = await this.prompt<BaseAnswers1>([
       {
         name: 'npmName',
@@ -114,11 +119,11 @@ export class BaseGenerator extends Generator {
       npmNameWithoutScope,
       githubFullName,
     }
-    
+
     return this.baseAnswers
   }
 
-  async _setupGit (): Promise<void> {
+  async _setupGit(): Promise<void> {
     const { githubFullName } = this.baseAnswers
 
     const cmd = [
@@ -133,12 +138,12 @@ export class BaseGenerator extends Generator {
   }
 }
 
-export function inquirerValid (value: any, schema: AnySchemaTyped<any>): true | string {
+export function inquirerValid(value: any, schema: AnySchemaTyped<any>): true | string {
   const { error } = getValidationResult(value, schema)
   return error ? error.message : true
 }
 
-export function parseNpmName (npmName: string): { npmScope?: string; npmNameWithoutScope: string } {
+export function parseNpmName(npmName: string): { npmScope?: string; npmNameWithoutScope: string } {
   const [npmNameWithoutScope, npmScope] = npmName.split('/').reverse()
   return {
     npmScope,
