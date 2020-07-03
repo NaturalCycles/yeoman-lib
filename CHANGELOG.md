@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/NaturalCycles/yeoman-lib/compare/v1.0.4...v1.0.5) (2020-07-03)
+
+
+### Bug Fixes
+
+* throw fuller error on npm-name error ([1545e13](https://github.com/NaturalCycles/yeoman-lib/commit/1545e13e044b2a11f7b7dd4055892c0e5fa6b9ff))
+
 ## [1.0.4](https://github.com/NaturalCycles/yeoman-lib/compare/v1.0.3...v1.0.4) (2020-04-04)
 
 
