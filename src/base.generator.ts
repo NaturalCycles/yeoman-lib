@@ -29,10 +29,7 @@ export interface BaseAnswers extends BaseAnswers1, BaseAnswers2 {
   githubFullName: string
 }
 
-export const githubOrgSchema = stringSchema
-  .min(1)
-  .max(80)
-  .alphanum()
+export const githubOrgSchema = stringSchema.min(1).max(80).alphanum()
 export const githubRepoSchema = stringSchema
   .min(1)
   .max(80)
