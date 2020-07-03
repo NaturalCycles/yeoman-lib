@@ -64,7 +64,7 @@ export class BaseGenerator extends Generator {
         default: _.kebabCase(this.appname), // Default to current folder name
         validate: async (npmName: any) => {
           const avail = await checkNpmName(npmName).catch(err => {
-            console.log(err)
+            console.error(err)
             return false
           })
 
