@@ -1,10 +1,10 @@
+import { _kebabCase } from '@naturalcycles/js-lib'
 import {
   AnySchemaTyped,
   convert,
   getValidationResult,
   stringSchema,
 } from '@naturalcycles/nodejs-lib'
-import _ = require('lodash')
 import * as checkNpmName from 'npm-name'
 import * as Generator from 'yeoman-generator'
 
@@ -61,7 +61,7 @@ export class BaseGenerator extends Generator {
       {
         name: 'npmName',
         message: 'npm project name (including scope, if needed, e.g @angular/builder)',
-        default: _.kebabCase(this.appname), // Default to current folder name
+        default: _kebabCase(this.appname), // Default to current folder name
         validate: async (npmName: any) => {
           const avail = await checkNpmName(npmName).catch(err => {
             console.error(err)
