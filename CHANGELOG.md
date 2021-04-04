@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/NaturalCycles/yeoman-lib/compare/v1.1.0...v1.2.0) (2021-04-04)
+
+
+### Features
+
+* drop lodash in favor of js-lib ([3f79a36](https://github.com/NaturalCycles/yeoman-lib/commit/3f79a362662d91bb9179ff77d85836efe792d94a))
+
 # [1.1.0](https://github.com/NaturalCycles/yeoman-lib/compare/v1.0.5...v1.1.0) (2021-04-04)
 
 
