@@ -144,6 +144,6 @@ export function parseNpmName(npmName: string): { npmScope?: string; npmNameWitho
   const [npmNameWithoutScope, npmScope] = npmName.split('/').reverse()
   return {
     npmScope,
-    npmNameWithoutScope,
+    npmNameWithoutScope: npmNameWithoutScope!,
   }
 }

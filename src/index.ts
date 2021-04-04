@@ -9,10 +9,10 @@ import {
   parseNpmName,
 } from './base.generator'
 
+export type { BaseAnswers, BaseOptions }
+
 export {
   BaseGenerator,
-  BaseAnswers,
-  BaseOptions,
   inquirerValid,
   parseNpmName,
   githubOrgSchema,
