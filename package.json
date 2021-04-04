@@ -6,7 +6,7 @@
     "@naturalcycles/nodejs-lib": "^12.14.0",
     "@types/yeoman-generator": "^4.11.3",
     "npm-name": "^6.0.0",
-    "yeoman-generator": "^5.2.0"
+    "yeoman-generator": "^4.0.0"
   },
   "devDependencies": {
     "@naturalcycles/dev-lib": "^10.13.0",
