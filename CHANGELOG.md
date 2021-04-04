@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/NaturalCycles/yeoman-lib/compare/v1.0.5...v1.1.0) (2021-04-04)
+
+
+### Features
+
+* modernize ([ec007e9](https://github.com/NaturalCycles/yeoman-lib/commit/ec007e95b72564d6a505aa8383f4128bacda3dbb))
+
 ## [1.0.5](https://github.com/NaturalCycles/yeoman-lib/compare/v1.0.4...v1.0.5) (2020-07-03)
 
 
