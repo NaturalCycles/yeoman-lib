@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/NaturalCycles/yeoman-lib/compare/v1.2.0...v1.2.1) (2021-04-04)
+
+
+### Bug Fixes
+
+* revert yeoman-generator back to 4.x ([e74dc56](https://github.com/NaturalCycles/yeoman-lib/commit/e74dc56972061ec91ab21055ce53b24fad97d939))
+
 # [1.2.0](https://github.com/NaturalCycles/yeoman-lib/compare/v1.1.0...v1.2.0) (2021-04-04)
 
 
