@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/NaturalCycles/yeoman-lib/compare/v1.2.1...v1.2.2) (2021-09-03)
+
+
+### Bug Fixes
+
+* remove failing `npm-name` ([348cd2d](https://github.com/NaturalCycles/yeoman-lib/commit/348cd2d7984d431f77dd9cc32becb2f932daaca2))
+
 ## [1.2.1](https://github.com/NaturalCycles/yeoman-lib/compare/v1.2.0...v1.2.1) (2021-04-04)
 
 
