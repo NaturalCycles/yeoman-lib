@@ -5,7 +5,6 @@ import {
   getValidationResult,
   stringSchema,
 } from '@naturalcycles/nodejs-lib'
-import * as checkNpmName from 'npm-name'
 import * as Generator from 'yeoman-generator'
 
 export interface BaseOptions {
@@ -62,18 +61,18 @@ export class BaseGenerator extends Generator {
         name: 'npmName',
         message: 'npm project name (including scope, if needed, e.g @angular/builder)',
         default: _kebabCase(this.appname), // Default to current folder name
-        validate: async (npmName: any) => {
-          const avail = await checkNpmName(npmName).catch(err => {
-            console.error(err)
-            return false
-          })
-
-          if (!avail) {
-            return `${npmName} npm package is not available (taken or invalid)`
-          }
-
-          return true
-        },
+        // validate: async (npmName: any) => {
+        //   const avail = await checkNpmName(npmName).catch(err => {
+        //     console.error(err)
+        //     return false
+        //   })
+        //
+        //   if (!avail) {
+        //     return `${npmName} npm package is not available (taken or invalid)`
+        //   }
+        //
+        //   return true
+        // },
         store: true,
       },
     ])
