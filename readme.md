@@ -12,5 +12,5 @@
 # Packaging
 
 - `engines.node >= Latest LTS`
-- `main: dist/index.js`: commonjs, es20202
+- `main: dist/index.js`: commonjs, es2021
 - `types: dist/index.d.ts`: typescript types
